@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignación Citas</title>
+    <meta name ="keywords" content="veterinaria, mascotiando sas, consulta, clientes, asignación, citas">
+    <meta name ="description" content="Asignación citas">
+    <link rel="shortcut icon" href="../Soluciones Veterinarias Online/Imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/asignacion_citas.css">
+    <link rel="stylesheet" href="../Index/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="submenu-1">
+                    <a href=""><span class="icon-user"></span>Mi Cuenta<span class="submenu icon-circle-down"></span></a>
+                    <ul class="children">
+                        <li><a href="../HTML/registro_clientes.css">Registrarse</a></li>
+                        <li><a href="../HTML/inicio_sesion.html">Iniciar Sesión</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><span class="icon-cart"></span>Tienda</a></li>
+                </li>
+            </ul>
+        </nav>
+        <a href="../index.html"><img class="logo" src="../Imagenes/Mascotiando SAS Logo.JPG"></a>
+        <div class="contacto">
+            <a href="https://wa.me/3508756817" target="_blank"><img src="../Imagenes/whatsapp.png">Citas Spa Canino</a>
+        </div>
+        <br>
+        <hr>
+    </header>
+    <br><br><br><br><br><br>
+    <main>
+        <form class="formulario">
+            <h2>Asignación Citas</h2>
+            <label for="cedula">Cédula Propietario:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" autocomplete="off" required><br>
+            <label for="fecha">Fecha:<span> *</span></label>
+            <input type="date" id="fecha" name="fecha" autocomplete="off" required><br>
+            <label for="especialidad">Especialidad requerida:<span> *</span></label>
+            <select id="especialidad" name="especialidad" autocomplete="off" required>
+                <option value="">Seleccione la especialidad</option>
+                <option value="Consulta General">Consulta general</option>
+                <option value="Consulta Especializada">Consulta Especializada</option>
+                <option value="Laboratorio Clínico">Laboratorio Clínico</option>
+                <option value="Codigo QR Único">Código QR Único</option>
+                <option value="Vacunación">Vacunación</option>
+                <option value="Profilaxis Dental">Profilaxis Dental</option>
+            </select><br>
+            <input class ="cuenta" type="submit" value="Enviar">
+        </form>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <img class="footer" src="https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg">
+    </main>
+    <footer>
+        <hr>
+        <nav class="info-general">
+          <h2>Información General:</h2>
+          <hr>
+          <table border="1px">
+            <tr>
+              <th>Teléfono
+                  <a href="https://wa.me/3508756817" target="_blank"><img src="../Imagenes/whatsapp.png" width="30px"></a>
+              </th>
+              <td>3508756817</td>
+            </tr>
+            <tr>
+              <th>Correo
+                  <a href="mailto:mascotiandosas@veterinarios.com.co"> <img src="../Imagenes/correo.png" width="30px"></a>
+              </th>
+              <td>mascotiandosas@veterinarios.com.co</td>
+            </tr>
+            <tr>
+              <th>Redes Sociales</th>
+              <td>
+                 <a href="" target="_blank"><img src="../Imagenes/facebook.png"></a> 
+                 <a href="" target="_blank"><img src="../Imagenes/twitter.png"></a>
+                 <a href="" target="_blank"><img src="../Imagenes/youtube.png"></a>
+              </td>
+            </tr>
+          </table>
+        </nav>
+        <nav class="sedes">
+            <h2>Sede:</h2>
+            <hr>
+            <h3>Bosa:</h3>
+            <p>Cll. 65 Sur # 51 - 78H<br>6014859612</p>
+        </nav>    
+        <nav class="ubicacion">
+            <h2>Ubicación</h2>
+            <hr>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3976.9420641232978!2d-74.1866035!3d4.6043968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e436415f24b%3A0xf59eb1c8fa3017d4!2sCentro%20Comercial%20Gran%20Plaza%20Bosa!5e0!3m2!1ses-419!2sco!4v1684890806512!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+        <button class="chat"><img src="../Imagenes/Chat.png"></span></button>
+    </footer>
+</body>
+    

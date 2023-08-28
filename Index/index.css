@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header nav {
+    z-index: 1000;
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+header nav ul li:hover {
+    background-color: lightblue;
+} 
+
+header nav ul li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+/*Estilos submenus con hijos*/
+
+header nav ul li:hover .children {
+    display: block;
+}
+
+header nav ul li .children {
+    display: none;
+    background-color: lightblue;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+    display: block;
+}
+
+/*Fin estilos submenu*/
+
+.logo {
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    margin: 10px 0 0 70px;
+}
+
+.contacto {
+    position:relative;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: black;
+}
+
+.fondo {
+    width: 100%;
+    height: 600px;
+}
+
+/*Contenido principal*/
+
+.quienes-somos {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    margin: 460px 0 0 750px;
+    font-size: 20px;
+    background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg);
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quienes-somos a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.servicios {
+    width: 300px;
+    height: 200px;
+    float: center;
+    border-radius: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-servicios1 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    margin-left: 105px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+
+.contenedor-servicios2 {
+    position: absolute;
+    width: 390px;
+    height: 250px;
+    margin-left: 465px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios3 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    margin-left: 880px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios4 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    margin: 280px 0 0 105px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios5 {
+    position: absolute;
+    width: 390px;
+    height: 250px;
+    margin: 280px 0 0 465px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios6 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    margin: 280px 0 0 880px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios7 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    margin: 560px 0 0 105px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios8 {
+    position: absolute;
+    width: 390px;
+    height: 250px;
+    margin: 560px 0 0 465px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+.contenedor-servicios9 {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    margin: 560px 0 0 880px;
+    padding: 10px 0 0 20px;
+    text-align: center;
+}
+
+/*Footer*/
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    margin-top: 840px;
+}
+
+.info-general {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin: 20px 0 0 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.info-general table {
+    text-align: center;
+    margin: 15px 0 0 80px;
+}
+
+.info-general h2 {
+    text-align: center;
+}
+
+
+.sedes {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin: 20px 0 0 550px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sedes h3 {
+    text-align: justify;
+    margin: 10px 0 0 60px;
+}
+
+.sedes p {
+    margin: 5px 0 0 60px;
+}
+
+.sedes h2 {
+    text-align: center;
+}
+
+.ubicacion {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin: 20px 0 0 920px;  
+}
+
+.ubicacion h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ubicacion iframe {
+    width: 250px;
+    height: 150px; 
+    margin: 20px 0 0 60px;
+}
+
+.chat {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 1250px;
+    background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg);
+}
+
+

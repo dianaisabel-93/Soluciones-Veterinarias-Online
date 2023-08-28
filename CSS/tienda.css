@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../Imagenes/Fondo\ Header.jpg);
+}
+
+header nav {
+    z-index: 1000;
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+
+}
+
+header nav ul li:hover {
+    background-color: lightblue;
+} 
+
+header nav ul li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+
+/*Estilos submenus con hijos*/
+
+header nav ul li:hover .children {
+    display: block;
+}
+
+header nav ul li .children {
+    display: none;
+    background-color: lightblue;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+    display: block;
+}
+
+/* Iconos Tienda*/
+
+header nav ul li .icon-cart {
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+header nav ul li .icon-cart:hover {
+    cursor: pointer;
+
+}
+
+header nav ul li .container-icon {
+    position: relative;    
+}
+
+header nav ul li .count-products {
+    position: absolute;
+    top:55%;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+header nav ul li #contador-productos {
+    font-size: 12px;
+}
+
+header nav ul li .container-cart-products {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+header nav ul li .cart-products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+ }
+
+header nav ul li .info-cart-products {
+    display: flex;
+    justify-content: space-between;
+    flex: 0.9;
+
+ }
+
+ header nav ul li .titulo-producto-carrito {
+    font-size: 20px;
+    font-family: "Lato";
+ }
+
+ header nav ul li .precio-producto-carrito {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: "Lato";
+ }
+
+ header nav ul li .cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Lato";
+ }
+
+header nav ul li .icon-close {
+    width: 25px;
+    height: 25px;
+}
+
+header nav ul li .icon-close:hover {
+    stroke: red;
+    cursor: pointer;
+}
+
+header nav ul li .cart-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+ }
+
+ header nav ul li .cart-total h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato";
+ }
+
+ header nav ul li .total-pagar {
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Lato";
+ }
+
+ header nav ul li .hidden-cart {
+    display: none;
+ }
+
+/*Fin estilos submenu*/
+
+.logo {
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    margin: 10px 0 0 70px;
+}
+
+.contacto {
+    position:relative;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: black;
+}
+
+.fondo {
+    width: 100%;
+    height: 600px;
+}
+
+.fondo {
+    width: 100%;
+    height: 600px;
+}
+
+/*Main*/
+
+img {
+    max-width: 100%;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all;
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.info-product h2 {
+    font-size: 18px;
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button {
+    border-radius: 20px;
+    background: none;
+    background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg);
+    color: black;
+    font-size: 18px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty {
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden-message {
+    display: none;
+}
+
+
+/*Footer*/
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+
+.info-general {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin: 20px 0 0 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.info-general table {
+    text-align: center;
+    margin: 15px 0 0 80px;
+}
+
+.info-general h2 {
+    text-align: center;
+}
+
+
+.sedes {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    margin: 20px 0 0 550px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sedes h3 {
+    text-align: justify;
+    margin: 10px 0 0 60px;
+}
+
+.sedes p {
+    margin: 5px 0 0 60px;
+}
+
+.sedes h2 {
+    text-align: center;
+}
+
+.ubicacion {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin: 20px 0 0 920px;  
+}
+
+.ubicacion h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ubicacion iframe {
+    width: 250px;
+    height: 150px; 
+    margin: 20px 0 0 60px;
+}
+
+.chat {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 580px;
+    left: 1250px;
+    border: 2px solid black;
+    background-image: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg);
+}

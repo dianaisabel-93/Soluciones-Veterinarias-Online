@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <meta name ="keywords" content="veterinaria, mascotiando sas, tienda, clientes, compras">
+    <meta name ="description" content="Tienda de articulos veterinarios">
+    <link rel="shortcut icon" href="../Imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/tienda.css">
+    <link rel="stylesheet" href="../Index/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="submenu-1">
+                    <a href=""><span class="icon-user"></span>Mi Cuenta<span class="submenu icon-circle-down"></span></a>
+                    <ul class="children">
+                        <li><a href="../HTML/registro_clientes.html">Registrarse</a></li>
+                        <li><a href="../HTML/inicio_sesion.html">Iniciar Sesión</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="container-icon">
+                        <div class="container-cart-icon">
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="none" 
+                                viewBox="0 0 24 24" 
+                                stroke-width="1.5" 
+                                stroke="currentColor" 
+                                class="icon-cart">
+                            
+                                <path 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                            </svg>  
+                        </div>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                    </div>
+                    <div class="container-cart-products hidden-cart">
+                        <div class="row-products hidden">
+                            <div class="cart-products">
+                                <div class="info-cart-products">
+                                    <span class="cantidad-producto-carrito">1</span>
+                                      <p class="titulo-producto-carrito">Chunky adulto - 2 kg</p>
+                                      <span class="precio-producto-carrito">$18.150</span>
+                                </div>
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24"     
+                                        stroke-width="1.5" 
+                                        stroke="currentColor" 
+                                        class="icon-close">
+                                        
+                                        <path 
+                                        stroke-linecap="round" 
+                                        stroke-linejoin="round" 
+                                        d="M6 18L18 6M6 6l12 12" />
+                                    </svg> 
+                            </div>
+                        </div>
+                        
+                        <div class="cart-total hidden">
+                            <h3>Total:</h3>
+                            <span class="total-pagar">$20.000</span>
+                        </div>
+                        <p class="cart-empty hidden-message">El carrito está vacío</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <a href="../index.html"><img class="logo" src="../Imagenes/Mascotiando SAS Logo.JPG"></a>
+        <div class="contacto">
+            <a href="https://wa.me/3508756817" target="_blank"><img src="../Imagenes/whatsapp.png">Citas Spa Canino</a>
+        </div>
+        <br>
+        <hr>
+    </header>
+    <br><br><br><br><br><br>
+    <main>
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.hillspet.co/content/dam/pim/hills/es_co/pd/dry/pd-rd-canine-dry-productShot_zoom.jpg" alt="hills">
+                </figure>
+                <div class="info-product">
+                    <h2>Hills Canine R/D 8.5 Lb</h2>
+                    <p class="price">$176.400</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111103348_ed-min.jpg" alt="max">
+                </figure>
+                <div class="info-product">
+                    <h2>Max Adultos 20 Kg</h2>
+                    <p class="price">$302.400</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://olimpica.vtexassets.com/arquivos/ids/606152/7707205156855.jpg?v=637626488549300000" alt="chunky adulto">
+                </figure>
+                <div class="info-product">
+                    <h2>Chunky Adulto 2 Kg</h2>
+                    <p class="price">$18.150</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111101688_ed-min.jpg" alt="dog chow">
+                </figure>
+                <div class="info-product">
+                    <h2>Dog Chow Senior 8 Kg</h2>
+                    <p class="price">$125.000</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://vetmasagro.com/wp-content/uploads/2021/07/Vs-Pequen%E2%95%A0aosAdultos.png.webp" alt="agility gold">
+                </figure>
+                <div class="info-product">
+                    <h2>Agility Gold Pequeños Adultos 1.5 Kg</h2>
+                    <p class="price">$34.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://vetmasagro.com/wp-content/uploads/2021/07/Italcol-Agility-Render-Empaques-Nuevo-logo-NUEVO-PIEL-PEQUENOS-ADULTOS_15KG.png.webp" alt="agility gold piel">
+                </figure>
+                <div class="info-product">
+                    <h2>Agility Gold Pequeños Adultos Piel 1.5 Kg</h2>
+                    <p class="price">$38.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111102868_ed-min.jpg" alt="agility gold grandes piel">
+                </figure>
+                <div class="info-product">
+                    <h2>Agility Gold Grandes Adultos Piel 1.5 Kg</h2>
+                    <p class="price">$38.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://puppiesanimals.com/wp-content/uploads/2021/07/agility-gold-grandes-adultos.png" alt="agility gold grandes">
+                </figure>
+                <div class="info-product">
+                    <h2>Agility Gold Grandes Adultos 1.5 Kg</h2>
+                    <p class="price">$31.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://d2r9epyceweg5n.cloudfront.net/stores/001/049/402/products/monello-tradicional1-d5f6b8b1a4dc694e2d15688558584536-640-0.jpg" alt="monello">
+                </figure>
+                <div class="info-product">
+                    <h2>Monello Tradicional 7 Kg</h2>
+                    <p class="price">$95.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://doctorpet.co/wp-content/uploads/2021/04/monello-dog-cachorros-medellin-doctorpet.jpg" alt="monello cachorros">
+                </figure>
+                <div class="info-product">
+                    <h2>Monello Cachorros 7 Kg</h2>
+                    <p class="price">$107.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://puppiscolombia.vteximg.com.br/arquivos/ids/181629-505-505/monello.png?v=637897831286970000" alt="monello cachorros">
+                </figure>
+                <div class="info-product">
+                    <h2>Monello R. Pequeñas 7 Kg</h2>
+                    <p class="price">$107.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.hillspet.co/content/dam/pim/hills/es_co/pd/dry/pd-id-canine-dry-productShot_zoom.jpg" alt="hills I/D">
+                </figure>
+                <div class="info-product">
+                    <h2>Hills Canine I/D 8.5 Lb</h2>
+                    <p class="price">$228.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.hillspet.es/content/dam/pim/hills/es_es/pd/dry/pd-canine-prescription-diet-kd-dry-productShot_zoom.jpg" alt="hills K/D">
+                </figure>
+                <div class="info-product">
+                    <h2>Hills Canine K/D 8.5 Lb</h2>
+                    <p class="price">$221.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.hillspet.co/content/dam/pim/hills/es_co/pd/dry/pd-zd-canine-dry-productShot_zoom.jpg" alt="hills Z/D">
+                </figure>
+                <div class="info-product">
+                    <h2>Hills Canine Z/D 8.5 Lb</h2>
+                    <p class="price">$176.400</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.hillspet.co/content/dam/pim/hills/es_co/pd/dry/pd-cd-multicare-canine-dry-productShot_zoom.jpg" alt="hills C/D">
+                </figure>
+                <div class="info-product">
+                    <h2>Hills Canine C/D 8.5 Lb</h2>
+                    <p class="price">$176.400</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.hillspet.co/content/dam/pim/hills/es_co/pd/dry/pd-wd-canine-dry-productShot_zoom.jpg" alt="hills W/D">
+                </figure>
+                <div class="info-product">
+                    <h2>Hills Canine W/D 8.5 Lb</h2>
+                    <p class="price">$186.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://www.agrocampo.com.co/media/catalog/product/cache/d51e0dc10c379a6229d70d752fc46d83/1/1/111103074_ed-min.jpg" alt="pro plan sensitive">
+                </figure>
+                <div class="info-product">
+                    <h2>Pro Plan Sensitive 3 Kg</h2>
+                    <p class="price">$148.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://multicanmascotas.com/wp-content/uploads/2021/10/030-300x300.png" alt="pro plan exigent">
+                </figure>
+                <div class="info-product">
+                    <h2>Pro Plan Exigent 3 Kg</h2>
+                    <p class="price">$148.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/068/331/products/purina-pro-plan-flagship-perros-active-mind-razas-medianas-y-grandes1-e3d34150e8ac27fa5916170473533717-480-0.webp" alt="pro plan +7 grandes">
+                </figure>
+                <div class="info-product">
+                    <h2>Pro Plan +7 Grandes 3 Kg</h2>
+                    <p class="price">$148.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://puppiscolombia.vteximg.com.br/arquivos/ids/178396-505-505/alimento-perro-pro-plan-adultos-raza-mediana.png?v=637747677903030000" alt="pro plan adultos">
+                </figure>
+                <div class="info-product">
+                    <h2>Pro Plan Adultos 3 Kg</h2>
+                    <p class="price">$148.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://i.linio.com/p/927c0bac81eea28c71019f6d2049c806-product.jpg" alt="pro plan puppy">
+                </figure>
+                <div class="info-product">
+                    <h2>Pro Plan Puppy 3 Kg</h2>
+                    <p class="price">$148.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://falabella.scene7.com/is/image/FalabellaCO/gsc_119632258_2373767_1?wid=800&hei=800&qlt=70" alt="chunky cachorros">
+                </figure>
+                <div class="info-product">
+                    <h2>Chunky Cachorros 2 Kg</h2>
+                    <p class="price">$22.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://copservir.vtexassets.com/arquivos/ids/785267-800-auto?v=637964077771300000&width=800&height=auto&aspect=true" alt="chunky mayores">
+                </figure>
+                <div class="info-product">
+                    <h2>Chunky Mayores 1.5 Kg</h2>
+                    <p class="price">$26.900</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://exitocol.vtexassets.com/arquivos/ids/18412805/Alimento-Dog-Chow-Adultos-Raza-Pequena-X-1-kg-775835_a.jpg?v=638195168903430000" alt="dog chow pequeños">
+                </figure>
+                <div class="info-product">
+                    <h2>Dog Chow Pequeños 8 Kg</h2>
+                    <p class="price">$110.415</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://puppiscolombia.vteximg.com.br/arquivos/ids/158638-505-505/RAZAS-MEDIANAS-GRANDES-CACHORROS.jpg?v=637056242093930000" alt="dog chow cachorros medianos">
+                </figure>
+                <div class="info-product">
+                    <h2>Dog Chow Cachorros Medianos 8 Kg</h2>
+                    <p class="price">$107.850</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://exitocol.vtexassets.com/arquivos/ids/18414125/Alimento-Perro-Cachorro-Raza-Pequena-X-1-kg-433249_a.jpg?v=638195177952900000" alt="dog chow cachorros minis">
+                </figure>
+                <div class="info-product">
+                    <h2>Dog Chow Cachorros Minis 8 Kg</h2>
+                    <p class="price">$110.415</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/462710-800-800?v=638120929240900000&width=800&height=800&aspect=true" alt="dog chow adultos medianos">
+                </figure>
+                <div class="info-product">
+                    <h2>Dog Chow Adultos Medianos 8 Kg</h2>
+                    <p class="price">$110.415</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img class="productos" src="https://laika.com.co/cdn-cgi/image/onerror=redirect,format=auto,fit=scale-down,width=600,quality=80/https://laikapp.s3.amazonaws.com/dev_images_products/51226_129670_Dog_Chow____Sin_Colorantes_Adultos_Medianos_Y_Grandes_1642566281_500x500.jpg" alt="dog chow sin colorantes">
+                </figure>
+                <div class="info-product">
+                    <h2>Dog Chow Sin Colorantes 8 Kg</h2>
+                    <p class="price">95.100</p>
+                    <button class= "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br><br>
+        <img class="footer" src="https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg">
+
+    </main>
+    <footer>
+        <hr>
+        <nav class="info-general">
+          <h2>Información General:</h2>
+          <hr>
+          <table border="1px">
+            <tr>
+              <th>Teléfono
+                  <a href="https://wa.me/3508756817" target="_blank"><img src="../Imagenes/whatsapp.png" width="30px"></a>
+              </th>
+              <td>3508756817</td>
+            </tr>
+            <tr>
+              <th>Correo
+                  <a href="mailto:mascotiandosas@veterinarios.com.co"> <img src="../Imagenes/correo.png" width="30px"></a>
+              </th>
+              <td>mascotiandosas@veterinarios.com.co</td>
+            </tr>
+            <tr>
+              <th>Redes Sociales</th>
+              <td>
+                 <a href="" target="_blank"><img src="../Imagenes/facebook.png"></a> 
+                 <a href="" target="_blank"><img src="../Imagenes/twitter.png"></a>
+                 <a href="" target="_blank"><img src="../Imagenes/youtube.png"></a>
+              </td>
+            </tr>
+          </table>
+        </nav>
+        <nav class="sedes">
+            <h2>Sede:</h2>
+            <hr>
+            <h3>Bosa:</h3>
+            <p>Cll. 65 Sur # 51 - 78H<br>6014859612</p>
+        </nav>    
+        <nav class="ubicacion">
+            <h2>Ubicación</h2>
+            <hr>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3976.9420641232978!2d-74.1866035!3d4.6043968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e436415f24b%3A0xf59eb1c8fa3017d4!2sCentro%20Comercial%20Gran%20Plaza%20Bosa!5e0!3m2!1ses-419!2sco!4v1684890806512!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+        <button class="chat"><img src="../Imagenes/Chat.png"></span></button>
+    </footer>
+    <script src="../JS/tienda.js"></script>
+</body>
