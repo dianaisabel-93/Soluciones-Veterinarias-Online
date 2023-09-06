@@ -36,7 +36,7 @@
     </header>
     <br><br><br><br><br><br>
     <main>
-        <form id="inicio-sesion" method="post" action="../PHP/inicio.php">
+        <form id="inicio-sesion" method="post" action="../PHP/inicio_sesion.php">
             <h1>Inicio de Sesión</h1>
             <input type="text" id="userName" placeholder="Usuario" name="userName" autocomplete="off">
             <input type="password" id="password" placeholder="Contraseña" name="password" autocomplete="off">
@@ -46,7 +46,7 @@
         </form>
         <section class="registro">
             <p id="registro">Si no estás registrado:</p>
-            <button id="registro-boton">Registrate Aquí</button>
+            <button id="registro-boton" onclick="window.location.href = '../HTML/registro_clientes.html'">Registrate Aquí</button>
         </section>
         <br><br><br>
         <img class="footer" src="https://image.jimcdn.com/app/cms/image/transf/none/path/sf7cfab09b729c913/backgroundarea/ie194260087e03bfa/version/1580220084/image.jpg">

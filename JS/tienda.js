@@ -13,7 +13,7 @@ const rowProduct = document.querySelector('.row-products');
 // Lista de todos los contenedores de productos
 const productsList = document.querySelector('.container-items');
 
-// Variable de arreglos de Productos
+// Variable de almacenar los productos en un arreglo
 let allProducts = [];
 
 const valorTotal = document.querySelector('.total-pagar');
@@ -23,6 +23,7 @@ const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+//Crear un evento al realizar clic en los productos de la tienda
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
@@ -55,6 +56,7 @@ productsList.addEventListener('click', e => {
 	}
 });
 
+//Crear un evento clic en el icono de eliminar productos
 rowProduct.addEventListener('click', e => {
 	if (e.target.classList.contains('icon-close')) {
 		const product = e.target.parentElement;
@@ -70,7 +72,7 @@ rowProduct.addEventListener('click', e => {
 	}
 });
 
-// Funcion para mostrar  HTML
+// Funcion para mostrar  el contenido HTML del carrito
 const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
@@ -143,7 +145,7 @@ const showHTML = () => {
 
 };
 
-//Carfgar datos del carrito desde locaLStorage cuando la pagina se carga
+//Cargar datos del carrito desde locaLStorage cuando la pagina se carga
 window.addEventListener('DOMContentLoaded', () => {
 	const storedCart = localStorage.getItem('cart');
 	if (storedCart) {
