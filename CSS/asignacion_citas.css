@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -104,6 +102,8 @@ header nav ul li .children li a {
     width: 100%;
     height: 600px;
 }
+
+/* Contenido Principal*/ 
 
 form, .form, label {
     display: block;
